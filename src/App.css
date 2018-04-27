@@ -1,0 +1,108 @@
+.App {
+
+}
+
+.App h2 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size:40px;
+  text-transform: uppercase;
+  padding:20px;
+  margin-bottom:20px;
+  color:#25373D;
+  border-width: 8px;
+  border-style: double;
+  border-color: #25373D;
+  background-color: #FFFFFF;
+}
+
+.App #container {
+  display:flex;
+  align-items: stretch;
+}
+
+.App #container #list ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.App #container #list ul li .media {
+  margin-bottom:60px;
+}
+
+.App #container #list ul li .media .media-body .product_title {
+  font-family: 'Permanent Marker', cursive;
+  font-size:20px;
+}
+
+.App #container #list, .App #container #cart
+{
+  position: relative;
+  border-width: 8px;
+  border-style: double;
+  border-color: #25373D;
+  background-color: #FFFFFF;
+  flex:1;
+  padding:20px;
+}
+
+.App #container #list .corner-ribbon{
+  width: 200px;
+  background: #D75452;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Custom styles */
+
+.App #container #list .corner-ribbon.sticky{
+  position: fixed;
+}
+
+.App #container #list .corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.App #container #list .corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+.App #container #list h2, .App #container #cart h2 {
+  border:none;
+  font-size:30px;
+  font-style:italic;
+}
+
+.App #container #cart #order ul li.last {
+  border:none;
+}
+
+.App #container #cart #order ul li {
+  margin-bottom:10px;
+  padding:10px 0;
+  border-bottom:2px dotted grey;
+}
+.App #container #cart #order ul {
+  list-style: none;
+  margin:20px 0;
+  padding:0;
+}
+
+.App #container #cart #order button {
+  margin:0 auto;
+  width:100%;
+}
